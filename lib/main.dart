@@ -27,7 +27,10 @@ class MyApp extends StatelessWidget {
             child: Container(
               width: 400,
               height: 500,
-              color: Colors.white,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20), // ⭐ Bordes curvos
+              ),
 
               // Memorandum Mental esto como en ccs pero en vez de px loescribes
               // colocando EdgeInsets
@@ -37,24 +40,70 @@ class MyApp extends StatelessWidget {
                 // Con este Column puedo ir agregando elementos
                 child: Column(
                   children: [
-                    // Primer input
-                    TextField(
+                    //  TextFormField 01
+                    TextFormField(
                       decoration: InputDecoration(
-                        labelText: "Escribe algo",
-                        border: OutlineInputBorder(),
+                        labelText: "Nuevo input con TextFormField",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                       ),
                     ),
 
                     // espacio entre inputs
                     const SizedBox(height: 20),
 
-                    // ⭐⭐ Tercer input con TextFormField ⭐⭐
+                    //  TextFormField 02
                     TextFormField(
-                      decoration: const InputDecoration(
+                      decoration: InputDecoration(
                         labelText: "Nuevo input con TextFormField",
-                        border: OutlineInputBorder(),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
                       ),
                     ),
+
+                    // espacio entre inputs
+                    const SizedBox(height: 20),
+
+                    //  TextFormField 03
+                    TextFormField(
+                      decoration: InputDecoration(
+                        labelText: "Nuevo input con TextFormField",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                    ),
+
+                    // espacio entre inputs
+                    const SizedBox(height: 20),
+
+                    //  TextFormField 04
+                    TextFormField(
+                      decoration: InputDecoration(
+                        labelText: "Nuevo input con TextFormField",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                    ),
+
+                    // espacio entre inputs
+                    const SizedBox(height: 20),
+
+                    //  TextFormField 05
+                    TextFormField(
+                      decoration: InputDecoration(
+                        labelText: "Nuevo input con TextFormField",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                    ),
+
+                    // espacio entre inputs
+                    const SizedBox(height: 20),
                   ],
                 ),
               ),
