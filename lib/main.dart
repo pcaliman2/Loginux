@@ -40,65 +40,81 @@ class MyApp extends StatelessWidget {
                 // Con este Column puedo ir agregando elementos
                 child: Column(
                   children: [
-                    //  TextFormField 01
+                    Text(
+                      "Registrarse",
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        color: const Color.fromARGB(221, 164, 5, 212),
+                      ),
+                    ),
+
+                    const SizedBox(height: 30),
+
+                    //  TextFormField Nombre
                     TextFormField(
                       decoration: InputDecoration(
-                        labelText: "Nuevo input con TextFormField",
+                        labelText: "Nombre completo",
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.person),
                       ),
                     ),
 
                     // espacio entre inputs
                     const SizedBox(height: 20),
 
-                    //  TextFormField 02
+                    //  TextFormField Telefono
                     TextFormField(
                       decoration: InputDecoration(
-                        labelText: "Nuevo input con TextFormField",
+                        labelText: "Teléfono",
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.phone),
                       ),
                     ),
 
                     // espacio entre inputs
                     const SizedBox(height: 20),
 
-                    //  TextFormField 03
+                    //  TextFormField email
                     TextFormField(
                       decoration: InputDecoration(
-                        labelText: "Nuevo input con TextFormField",
+                        labelText: "Email",
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.email),
                       ),
                     ),
 
                     // espacio entre inputs
                     const SizedBox(height: 20),
 
-                    //  TextFormField 04
+                    //  TextFormField Password
                     TextFormField(
                       decoration: InputDecoration(
-                        labelText: "Nuevo input con TextFormField",
+                        labelText: "Password",
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.lock),
                       ),
                     ),
 
                     // espacio entre inputs
                     const SizedBox(height: 20),
 
-                    //  TextFormField 05
+                    //  TextFormField Confrmar Password
                     TextFormField(
                       decoration: InputDecoration(
-                        labelText: "Nuevo input con TextFormField",
+                        labelText: "Confirmma tu Password",
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.lock_outline),
                       ),
                     ),
 
