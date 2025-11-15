@@ -37,6 +37,14 @@ class MyApp extends StatelessWidget {
                 // Con este Column voy a poder ir agregando elementos
                 child: Column(
                   children: [
+                    // Primer input
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: "Escribe algo",
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                    // Sugundo input
                     TextField(
                       decoration: InputDecoration(
                         labelText: "Escribe algo",
