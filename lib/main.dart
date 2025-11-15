@@ -23,15 +23,8 @@ class MyApp extends StatelessWidget {
           ),
 
           // Aquí dentro va TU CONTENIDO
-          child: const Center(
-            child: Text(
-              "Hola Omega",
-              style: TextStyle(
-                fontSize: 28,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+          child: Center(
+            child: Container(width: 400, height: 500, color: Colors.white),
           ),
         ),
       ),
