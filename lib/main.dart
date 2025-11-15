@@ -24,7 +24,29 @@ class MyApp extends StatelessWidget {
 
           // Aqui Agregola ventana
           child: Center(
-            child: Container(width: 400, height: 500, color: Colors.blueGrey),
+            child: Container(
+              width: 400,
+              height: 500,
+              color: Colors.white,
+
+              // Memorandum Mental esto como en ccs pero en vez de px loescribes
+              // colocando EdgeInsets
+              child: const Padding(
+                padding: EdgeInsets.all(20),
+
+                // Con este Column voy a poder ir agregando elementos
+                child: Column(
+                  children: [
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: "Escribe algo",
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ),
       ),
