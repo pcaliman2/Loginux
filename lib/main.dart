@@ -120,6 +120,24 @@ class MyApp extends StatelessWidget {
 
                     // espacio entre inputs
                     const SizedBox(height: 20),
+
+                    SizedBox(
+                      width: double.infinity,
+                      height: 50,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          print("Mensaje en Consola");
+                        },
+                        child: const Text(
+                          "Registrar",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
