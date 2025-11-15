@@ -128,6 +128,19 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print("Mensaje en Consola");
                         },
+
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromARGB(
+                            221,
+                            164,
+                            5,
+                            212,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+
                         child: const Text(
                           "Registrar",
                           style: TextStyle(
