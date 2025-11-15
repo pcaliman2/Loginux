@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
             ),
           ),
 
-          // Aquí dentro va TU CONTENIDO
+          // Aqui Agregola ventana
           child: Center(
-            child: Container(width: 400, height: 500, color: Colors.white),
+            child: Container(width: 400, height: 500, color: Colors.blueGrey),
           ),
         ),
       ),
