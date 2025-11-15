@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
 
-          // Aqui Agregola ventana
+          // Aquí agrego la ventana
           child: Center(
             child: Container(
               width: 400,
@@ -31,10 +31,10 @@ class MyApp extends StatelessWidget {
 
               // Memorandum Mental esto como en ccs pero en vez de px loescribes
               // colocando EdgeInsets
-              child: const Padding(
+              child: Padding(
                 padding: EdgeInsets.all(20),
 
-                // Con este Column voy a poder ir agregando elementos
+                // Con este Column puedo ir agregando elementos
                 child: Column(
                   children: [
                     // Primer input
@@ -44,10 +44,14 @@ class MyApp extends StatelessWidget {
                         border: OutlineInputBorder(),
                       ),
                     ),
-                    // Sugundo input
-                    TextField(
-                      decoration: InputDecoration(
-                        labelText: "Escribe algo",
+
+                    // espacio entre inputs
+                    const SizedBox(height: 20),
+
+                    // ⭐⭐ Tercer input con TextFormField ⭐⭐
+                    TextFormField(
+                      decoration: const InputDecoration(
+                        labelText: "Nuevo input con TextFormField",
                         border: OutlineInputBorder(),
                       ),
                     ),
